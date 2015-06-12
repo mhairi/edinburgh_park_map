@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\nlibrary(leaflet)\n\nshinyUI(fluidPage(\n\n  titlePanel(\"Edinburgh Parks\"),\n\n  sidebarLayout(\n    sidebarPanel(\n      selectInput(\"subset\",\n                  label = h3(\"What do you want at your park?\"), \n                  choices = as.list(options))\n    ),\n\n    mainPanel(\n      leafletOutput(\"map\")\n    )\n  )\n))\n",
+    "created" : 1428165359449.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3591320044",
+    "id" : "A3606C78",
+    "lastKnownWriteTime" : 1433513054,
+    "path" : "~/Miscellaneous/Personal/Parks/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

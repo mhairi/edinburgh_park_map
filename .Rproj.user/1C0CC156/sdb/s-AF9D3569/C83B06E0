@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\nsource('helpers_leaflet.R')\n\nshinyServer(function(input, output) {\n\n  #When map starts\n  output$map <- renderLeaflet({\n    make_map()\n  })\n\n  #On changing the options\n  observeEvent(input$subset, {\n    subset <- select_subset(input$subset) \n    print(subset)\n    update_map(subset)\n  })\n  \n})\n\n",
+    "created" : 1428165264672.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3103155145",
+    "id" : "C83B06E0",
+    "lastKnownWriteTime" : 1433513777,
+    "path" : "~/Miscellaneous/Personal/Parks/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
